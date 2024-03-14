@@ -90,16 +90,16 @@ def open_main_window():
     img_label.pack(pady=(20, 20))
 
 # BUTTON
-    next_btn = Button(root, text='NEXT WALLPAPER', font=25, fg='black', bg='yellow', width=20, height=2, command=rotate_img)
+    next_btn = Button(root, text='NEXT WALLPAPER', font=25, fg='black', bg='yellow', width=18, height=2, command=rotate_img)
     next_btn.pack(side=RIGHT)
 
-    prev_btn = Button(root, text='PREV WALLPAPER', font=25, fg='black', bg='yellow', width=20, height=2, command=prev_item)
+    prev_btn = Button(root, text='PREV WALLPAPER', font=25, fg='black', bg='yellow', width=18, height=2, command=prev_item)
     prev_btn.pack(side=LEFT)
 
-    grid_btn = Button(root, text='VIEW WALLPAPERS', font=25, fg='black', bg='green', width=20, height=2, command=open_grid_view)
+    grid_btn = Button(root, text='Grid View', font=20, fg='black', bg='green', width=16, height=2, command=open_grid_view)
     grid_btn.pack(side=LEFT)
 
-    exit_btn = Button(root, text='EXIT PROGRAM', font=25, fg='black', bg='red', width=29,height=2, command=exit_program)
+    exit_btn = Button(root, text='Exit Program', font=20, fg='black', bg='red', width=16,height=2, command=exit_program)
     exit_btn.pack(side=RIGHT)
     
 #closing window
@@ -109,12 +109,12 @@ def exit_program():
 counter = 1
 root = Tk()
 root.withdraw()  # Hide the main window initially
-files = os.listdir('wallpaper')
+files = os.listdir('wallpapers')
 
 # IMG for main window
 main_img_array = []
 for file in files:
-    img = Image.open(os.path.join('wallpaper', file))
+    img = Image.open(os.path.join('wallpapers', file))
     main_img_array.append(img)
 
 # IMG for grid view
