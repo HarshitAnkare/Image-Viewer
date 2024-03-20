@@ -17,7 +17,7 @@ To exit the application, click on the "Exit Program" button.<br>
 Dependencies :<br>
 Python 3.x<br>
 Tkinter<br>
-Pillow (PIL)<br>
+Pillow (PIL)<br
 <br>
 Contributing :<br>
 Contributions are welcome! Please feel free to open an issue or submit a pull request for any improvements or features you'd like to add.
